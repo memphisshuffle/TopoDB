@@ -8,8 +8,8 @@
 development:
   adapter: mysql2
   database: topo_dev
-  username: developer
-  password: dev123
+  username: topo
+  password: P@ssw@rd
   host: 127.0.0.1
   port: 3306
 

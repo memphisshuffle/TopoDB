@@ -1,0 +1,9 @@
+(electron) 'getName function' is deprecated and will be removed. Please use 'name property' instead.
+[247260:0105/092823.132894:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+(electron) 'setAudioMuted function' is deprecated and will be removed. Please use 'audioMuted property' instead.
+[247260:0105/092830.026606:ERROR:buffer_manager.cc(488)] [.DisplayCompositor]GL ERROR :GL_INVALID_OPERATION : glBufferData: <- error from previous GL command
+Checking for update
+Update for version 2.0.0 is not available (latest version: 2.0.0, downgrade is allowed).
+checkForUpdatesAndNotify called, downloadPromise is null
+
+(all-in-one:247218): libayatana-appindicator-WARNING **: 09:29:14.559: Unable to send signal for NewStatus: The connection is closed

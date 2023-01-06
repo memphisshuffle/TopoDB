@@ -33,7 +33,7 @@ end
 
 
 #create Admin user
-#User.new(email:"admin@topodb.ucsf.edu", password:"321321", password_confirmation:"321321", admin:true, editor:true, first:"Admin", last:"User").save
+User.new(email:"admin@topodb.topo", password:"admin123", password_confirmation:"admin123", admin:true, editor:true, first:"Admin", last:"User").save
 #create breeding cages
 50.times do 
 
@@ -103,17 +103,17 @@ dgn = 200
 end
 
 # create experiments
-5.times do 
-    name = Faker::Lorem.sentence(word_count:3)
-    date = Faker::Date.between(from:1.year.ago,to:Date.today)
-    desc = Faker::Lorem.paragraph(sentence_count:3)
-    gene = Mouse.pluck(:strain).uniq[Faker::Number.between(from:0, to: (Mouse.pluck(:strain).uniq.size - 1))]
-    prot = Faker::Lorem.paragraph(sentence_count:3)
-    var1 = "disability"
-    v1row = Faker::Number.between(from:5, to:20)
-    var2 = "weight"
-    v2row = Faker::Number.between(from:5, to:20)
-    Experiment.create(name:name, date:date, description:desc, gene:gene, variable_1:var1, variable_1_rows:v1row, variable_2:var2, variable_2_rows:v2row, protocol:prot)
-end
+# 5.times do
+#     name = Faker::Lorem.sentence(word_count:3)
+#     date = Faker::Date.between(from:1.year.ago,to:Date.today)
+#     desc = Faker::Lorem.paragraph(sentence_count:3)
+#     gene = Mouse.pluck(:strain).uniq[Faker::Number.between(from:0, to: (Mouse.pluck(:strain).uniq.size - 1))]
+#     prot = Faker::Lorem.paragraph(sentence_count:3)
+#     var1 = "disability"
+#     v1row = Faker::Number.between(from:5, to:20)
+#     var2 = "weight"
+#     v2row = Faker::Number.between(from:5, to:20)
+#     Experiment.create(name:name, date:date, description:desc, gene:gene, variable_1:var1, variable_1_rows:v1row, variable_2:var2, variable_2_rows:v2row, protocol:prot)
+# end
 
 
